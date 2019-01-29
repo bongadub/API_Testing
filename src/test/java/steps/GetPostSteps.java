@@ -54,7 +54,7 @@ public class GetPostSteps {
                 with()
                 .body(postContent).
                 when()
-                .post("http://0.0.0.0:5000/results").
+                .post("http://127.0.0.1:5000/results").
                 then();
     }
 
@@ -68,7 +68,7 @@ public class GetPostSteps {
     public void i_delete(String idNum)  {
         given().contentType(ContentType.JSON);
 
-        when().delete("http://0.0.0.0:5000/results/{%s}", idNum).then();
+        when().delete("http://127.0.0.1:5000/results/{%s}", idNum).then();
     }
 
     @Given("^I perform a Update operation$")
@@ -82,7 +82,7 @@ public class GetPostSteps {
         HashMap<String, Object > postContent = new HashMap<String, Object >();
         postContent.put("chemistry", 78);
         postContent.put("maths", 80);
-        postContent.put("name", name);
+//        postContent.put("name", name);
         postContent.put("physics", 90);
 
 
@@ -95,7 +95,7 @@ public class GetPostSteps {
                 with()
                 .body(postContent).
                 when()
-                .put("http://0.0.0.0:5000/results/1").
+                .put("http://127.0.0.1:5000/results/3").
                 then();
 
     }
