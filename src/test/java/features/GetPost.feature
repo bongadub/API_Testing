@@ -6,9 +6,11 @@ Feature:
     When  I post a new <Name> , <Physics> <Maths> and <Chemistry>
 
     Examples:
-      | Name    |  Physics   |  Maths   | Chemistry  |
-      | "Sam"   |   "23"     |  "4"     |    "5"     |
-      | "Bonga" |   "87"     |  "90"    |    "80"    |
+      | Name        |  Physics   |  Maths   | Chemistry  |
+      | "Sam"       |   "23"     |  "4"     |    "5"     |
+      | "Bonga"     |   "87"     |  "90"    |    "80"    |
+      | "DarrenMun" |   "0"      |  "0"     |    "0"     |
+      | "BigSam"    |   "67"     |  "68"    |    "34"    |
 
   Scenario Outline: GET method
     Given I perform GET operation
@@ -19,6 +21,8 @@ Feature:
       | id  |
       |  1  |
       |  2  |
+      |  3  |
+      |  4  |
 
 
 

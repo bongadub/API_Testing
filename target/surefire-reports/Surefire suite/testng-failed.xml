@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test name="Surefire test(failed)">
+    <classes>
+      <class name="steps.GetPostSteps">
+        <methods>
+          <include name="i_delete"/>
+          <include name="i_perform_GET_for_the_post_number"/>
+          <include name="i_post_a_new_and"/>
+          <include name="responseCodeShouldBe"/>
+        </methods>
+      </class> <!-- steps.GetPostSteps -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
